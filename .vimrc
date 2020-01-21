@@ -1,6 +1,3 @@
-syntax on
-colorscheme molokai
-set t_Co=256
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
@@ -60,6 +57,7 @@ if dein#load_state('/Users/akiyamatogiito/.vim/dein')
   call dein#add('leafgarland/typescript-vim')
   call dein#add('itchyny/lightline.vim')
   call dein#add('bronson/vim-trailing-whitespace')
+  call dein#add('tomasr/molokai')
 
   " Required:
   call dein#end()
@@ -101,3 +99,11 @@ function! TermOpen()
     execute "terminal"
   endif
 endfunction
+
+"--------------------------
+"color scheme
+"-------------------------
+syntax on
+colorscheme molokai
+set t_Co=256
+
